@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-05-19 19:35+0200\n"
-"PO-Revision-Date: 2020-06-25 19:08+0000\n"
+"PO-Revision-Date: 2021-04-05 07:56+0000\n"
 "Last-Translator: Petri Asikainen <uniluodossa@gmail.com>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsstatistics/fi/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.6-dev\n"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/apcups.js:7
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/apcups.json:2
@@ -64,6 +64,7 @@ msgid "Base Directory"
 msgstr "Perushakemisto"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/netlink.js:16
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/snmp6.js:16
 msgid "Basic monitoring"
 msgstr "Perusvalvonta"
 
@@ -313,6 +314,7 @@ msgstr "Ota tilastot käyttöön"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/processes.js:12
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/rrdtool.js:12
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/sensors.js:21
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/snmp6.js:13
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/syslog.js:12
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/tcpconns.js:12
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/thermal.js:13
@@ -462,11 +464,24 @@ msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/collectd.js:51
 msgid "Hostname"
-msgstr "Palvelinnimi"
+msgstr "Nimi"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/olsrd.js:15
 msgid "IP or hostname where to get the txtinfo output from"
 msgstr "IP-osoite tai isäntänimi, josta txtinfo-syöte haetaan"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/ipstatistics.js:7
+#: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/ipstatistics.json:2
+msgid "IP-Statistics"
+msgstr ""
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:7
+msgid "IP-Statistics Plugin Configuration"
+msgstr ""
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:11
+msgid "IPv4/IPv6 Statistics monitoring enabled"
+msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/irq.js:7
 msgid "IRQ Plugin Configuration"
@@ -586,6 +601,7 @@ msgstr "Muistin valvonta käytössä"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iwinfo.js:25
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/netlink.js:41
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/sensors.js:47
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/snmp6.js:21
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/thermal.js:34
 msgid "Monitor all except specified"
 msgstr "Valvo kaikkia paitsi valittuja"
@@ -685,6 +701,7 @@ msgstr[1] "Kaikkien paitsi %d levyn valvonta"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/interface.js:32
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iwinfo.js:36
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/netlink.js:54
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/snmp6.js:33
 msgid "Monitoring all but one interface"
 msgid_plural "Monitoring all but %d interfaces"
 msgstr[0] "Kaikkien paitsi yhden sovittimen seuranta"
@@ -713,6 +730,7 @@ msgstr "Valvotaan kaikkia paitsi %s, %s, %s"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/interface.js:30
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iwinfo.js:34
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/netlink.js:52
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/snmp6.js:31
 msgid "Monitoring all interfaces"
 msgstr "Kaikkien sovittimien valvonta"
 
@@ -767,6 +785,7 @@ msgstr[1] "Valvoo %d isäntää"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/interface.js:34
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iwinfo.js:38
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/netlink.js:56
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/snmp6.js:35
 msgid "Monitoring one interface"
 msgid_plural "Monitoring %d interfaces"
 msgstr[0] "Yhden sovittimen valvonta"
@@ -980,6 +999,14 @@ msgstr "Rivimäärä RRA-tietokannassa"
 msgid "Rule monitoring enabled"
 msgstr "Säännön valvonta päällä"
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/snmp6.js:7
+msgid "SNMP6"
+msgstr ""
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/snmp6.js:7
+msgid "SNMP6 Plugin Configuration"
+msgstr ""
+
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/sqm.js:7
 msgid "SQM"
 msgstr "SQM"
@@ -1059,6 +1086,10 @@ msgstr "Näytä maksimiarvot eikä keskiarvot"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/cpufreq.js:23
 msgid "Simple CPU frequency monitoring enabled"
 msgstr "Yksinkertainen CPU:n taajuuden seuranta"
+
+#: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/snmp6.json:2
+msgid "Snmp6"
+msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/unixsock.js:34
 msgid "Socket %s active"
@@ -1283,6 +1314,11 @@ msgid ""
 "The interface plugin collects traffic statistics on selected interfaces."
 msgstr "Sovittimet-lisäosa kerää liikennetietoja avlituilta sovittimilta."
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:8
+msgid ""
+"The ipstatistics plugin collects IPv4 and IPv6 statistics to compare them."
+msgstr ""
+
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iptables.js:9
 msgid ""
 "The iptables plugin will monitor selected firewall rules and collect "
@@ -1370,6 +1406,10 @@ msgid ""
 "statistics."
 msgstr ""
 "Anturilaajennus käyttää Linux-antureita ympäristötilastojen keräämiseen."
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/snmp6.js:8
+msgid "The snmp6 plugin collects IPv6 statistics for selected interfaces."
+msgstr ""
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/splash_leases.js:7
 msgid ""

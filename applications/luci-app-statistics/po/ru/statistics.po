@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LuCI: statistics\n"
 "POT-Creation-Date: 2017-10-17 22:00+0300\n"
-"PO-Revision-Date: 2020-12-30 02:30+0000\n"
-"Last-Translator: Anton Kikin <a.a.kikin@gmail.com>\n"
+"PO-Revision-Date: 2021-04-09 12:29+0000\n"
+"Last-Translator: The_BadUser <vanjavs@mail.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsstatistics/ru/>\n"
 "Language: ru\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.1-dev\n"
+"X-Generator: Weblate 4.6-dev\n"
 "Project-Info: Это технический перевод, не дословный. Главное-удобный русский "
 "интерфейс, все проверялось в графическом режиме, совместим с другими apps\n"
 
@@ -66,6 +66,7 @@ msgid "Base Directory"
 msgstr "Основная папка приложения"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/netlink.js:16
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/snmp6.js:16
 msgid "Basic monitoring"
 msgstr "Основная статистика"
 
@@ -317,6 +318,7 @@ msgstr "Включить статистику"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/processes.js:12
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/rrdtool.js:12
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/sensors.js:21
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/snmp6.js:13
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/syslog.js:12
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/tcpconns.js:12
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/thermal.js:13
@@ -476,6 +478,19 @@ msgstr "Имя хоста"
 msgid "IP or hostname where to get the txtinfo output from"
 msgstr "IP-адрес или имя хоста, с которых получать текстовый вывод"
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/ipstatistics.js:7
+#: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/ipstatistics.json:2
+msgid "IP-Statistics"
+msgstr "IP-Статистика"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:7
+msgid "IP-Statistics Plugin Configuration"
+msgstr "Конфигурация плагина IP-Статистика"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:11
+msgid "IPv4/IPv6 Statistics monitoring enabled"
+msgstr "Мониторинг статистики IPv4/IPv6 включен"
+
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/irq.js:7
 msgid "IRQ Plugin Configuration"
 msgstr "Настройка плагина «IRQ»"
@@ -599,6 +614,7 @@ msgstr "Мониторинг памяти включён"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iwinfo.js:25
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/netlink.js:41
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/sensors.js:47
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/snmp6.js:21
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/thermal.js:34
 msgid "Monitor all except specified"
 msgstr "Собирать статистику со всех кроме указанных"
@@ -701,6 +717,7 @@ msgstr[2] "Мониторинг всех дисков, кроме %d"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/interface.js:32
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iwinfo.js:36
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/netlink.js:54
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/snmp6.js:33
 msgid "Monitoring all but one interface"
 msgid_plural "Monitoring all but %d interfaces"
 msgstr[0] "Мониторинг всех интерфейсов, кроме одного"
@@ -732,6 +749,7 @@ msgstr "Мониторинг всего, кроме %s, %s, %s"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/interface.js:30
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iwinfo.js:34
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/netlink.js:52
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/snmp6.js:31
 msgid "Monitoring all interfaces"
 msgstr "Мониторинг всех интерфейсов"
 
@@ -790,6 +808,7 @@ msgstr[2] "Мониторинг %d хостов"
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/interface.js:34
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iwinfo.js:38
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/netlink.js:56
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/snmp6.js:35
 msgid "Monitoring one interface"
 msgid_plural "Monitoring %d interfaces"
 msgstr[0] "Мониторинг одного интерфейса"
@@ -1010,6 +1029,14 @@ msgstr "Количество «поколений» данных в архиве
 msgid "Rule monitoring enabled"
 msgstr "Мониторинг правил включён"
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/snmp6.js:7
+msgid "SNMP6"
+msgstr "SNMP6"
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/snmp6.js:7
+msgid "SNMP6 Plugin Configuration"
+msgstr "Настройки плагина «SNMP6»"
+
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/sqm.js:7
 msgid "SQM"
 msgstr "SQM"
@@ -1089,6 +1116,10 @@ msgstr "Показывать максимальные значения, а не 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/cpufreq.js:23
 msgid "Simple CPU frequency monitoring enabled"
 msgstr "Включён простой мониторинг частоты CPU"
+
+#: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/snmp6.json:2
+msgid "Snmp6"
+msgstr "SNMP6"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/unixsock.js:34
 msgid "Socket %s active"
@@ -1321,6 +1352,11 @@ msgid ""
 msgstr ""
 "Плагин «Интерфейсы» собирает статистику на выбранных сетевых интерфейсах."
 
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/ipstatistics.js:8
+msgid ""
+"The ipstatistics plugin collects IPv4 and IPv6 statistics to compare them."
+msgstr "Плагин ipstatistics собирает статистику IPv4 и IPv6 для их сравнения."
+
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iptables.js:9
 msgid ""
 "The iptables plugin will monitor selected firewall rules and collect "
@@ -1408,6 +1444,10 @@ msgid ""
 msgstr ""
 "Плагин «Сенсоры» использует сенсоры Linux, чтобы собрать статистику "
 "состояния устройства."
+
+#: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/snmp6.js:8
+msgid "The snmp6 plugin collects IPv6 statistics for selected interfaces."
+msgstr "Плагин «‎SNMP6»‎ собирает IPv6 статистику для выбранных интерфейсов."
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/splash_leases.js:7
 msgid ""
@@ -1570,7 +1610,7 @@ msgstr "При включении, отображаются значения в 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/statistics/rrdtool/definitions/iwinfo.js:7
 #: applications/luci-app-statistics/root/usr/share/luci/statistics/plugins/iwinfo.json:2
 msgid "Wireless"
-msgstr "Wi-Fi"
+msgstr "Беспроводная"
 
 #: applications/luci-app-statistics/htdocs/luci-static/resources/view/statistics/plugins/iwinfo.js:7
 msgid "Wireless iwinfo Plugin Configuration"

@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-04-25 16:36+0000\n"
-"Last-Translator: george k <norhorn@gmail.com>\n"
+"PO-Revision-Date: 2021-02-01 16:02+0000\n"
+"Last-Translator: ChriZathens <c_kan1@hotmail.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationssimple-adblock/el/>\n"
 "Language: el\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.0.2-dev\n"
+"X-Generator: Weblate 4.5-dev\n"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:217
 msgid "%s Error: %s"
@@ -16,10 +16,6 @@ msgstr ""
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:215
 msgid "%s Error: %s %s"
-msgstr ""
-
-#: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:198
-msgid "%s is blocking %s domains (with %s)."
 msgstr ""
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:129
@@ -73,6 +69,10 @@ msgstr ""
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:350
 msgid "Blocked Hosts URLs"
+msgstr ""
+
+#: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:198
+msgid "Blocking %s domains (with %s)."
 msgstr ""
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:188
@@ -168,7 +168,7 @@ msgstr ""
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:135
 msgid "Error"
-msgstr ""
+msgstr "Σφάλμα"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:137
 msgid "Fail"
@@ -276,6 +276,10 @@ msgstr ""
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:300
 msgid "Run service after set delay on boot."
+msgstr ""
+
+#: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:223
+msgid "Service Control"
 msgstr ""
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:172

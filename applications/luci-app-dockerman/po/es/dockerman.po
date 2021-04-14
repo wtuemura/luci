@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-17 14:54+0000\n"
-"Last-Translator: Álvaro Fernández Rojas <noltari@gmail.com>\n"
+"PO-Revision-Date: 2021-04-01 17:26+0000\n"
+"Last-Translator: Franco Castillo <castillofrancodamian@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsdockerman/es/>\n"
 "Language: es\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.6-dev\n"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:604
 msgid "A list of kernel capabilities to add to the container"
@@ -83,8 +83,9 @@ msgid "Bridge (Support direct communication between MAC VLANs)"
 msgstr "Puente (admite comunicación directa entre MAC VLANs)"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newnetwork.lua:34
+#, fuzzy
 msgid "Bridge device"
-msgstr "Dispositivo puente"
+msgstr "Puentear dispositivo"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/newcontainer.lua:603
 msgid "CAP-ADD(--cap-add)"
@@ -268,6 +269,7 @@ msgstr ""
 "algún problema, visite:"
 
 #: applications/luci-app-dockerman/luasrc/view/dockerman/container_file.htm:14
+#, fuzzy
 msgid "Download"
 msgstr "Descargar"
 
@@ -582,7 +584,7 @@ msgstr "Red superpuesta"
 
 #: applications/luci-app-dockerman/luasrc/controller/dockerman.lua:15
 msgid "Overview"
-msgstr "Visión general"
+msgstr "Vista general"
 
 #: applications/luci-app-dockerman/luasrc/model/cbi/dockerman/networks.lua:79
 msgid "Parent Interface"
@@ -833,8 +835,9 @@ msgstr "Actualizar"
 
 #: applications/luci-app-dockerman/luasrc/view/dockerman/container_file.htm:2
 #: applications/luci-app-dockerman/luasrc/view/dockerman/container_file.htm:13
+#, fuzzy
 msgid "Upload"
-msgstr "Cargar"
+msgstr "Subir"
 
 #: applications/luci-app-dockerman/luasrc/view/dockerman/container_file.htm:46
 msgid "Upload Error"

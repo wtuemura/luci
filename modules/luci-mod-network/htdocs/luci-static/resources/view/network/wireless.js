@@ -895,7 +895,7 @@ return view.extend({
 
 					o = ss.taboption('advanced', CBIWifiCountryValue, 'country', _('Country Code'));
 					o.wifiNetwork = radioNet;
- 
+
 					o = ss.taboption('advanced', form.ListValue, 'cell_density', _('Coverage cell density'), _('Configures data rates based on the coverage cell density. Normal configures basic rates to 6, 12, 24 Mbps if legacy 802.11b rates are not used else to 5.5, 11 Mbps. High configures basic rates to 12, 24 Mbps if legacy 802.11b rates are not used else to the 11 Mbps rate. Very High configures 24 Mbps as the basic rate. Supported rates lower than the minimum basic rate are not offered.'));
 					o.value('0', _('Disabled'));
 					o.value('1', _('Normal'));
@@ -987,8 +987,17 @@ return view.extend({
 								return net || network.addNetwork(name, { proto: 'none' });
 							}, this, values[i])).then(L.bind(function(dev, net) {
 								if (net) {
-									if (!net.isEmpty())
-										net.set('type', 'bridge');
+									if (!net.isEmpty()) {
+										var target_dev = net.getDevice();
+
+										/* Resolve parent interface of vlan */
+										while (target_dev && target_dev.getType() == 'vlan')
+											target_dev = target_dev.getParent();
+
+										if (!target_dev || target_dev.getType() != 'bridge')
+											net.set('type', 'bridge');
+									}
+
 									net.addDevice(dev);
 								}
 							}, this, dev)));

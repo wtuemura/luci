@@ -193,13 +193,8 @@ return view.extend({
 		s.handleAdd = function(ev) {
 			var config_name = this.uciconfig || this.map.config,
 			    section_id = uci.add(config_name, this.sectiontype),
-			    opt1, opt2;
-
-			for (var i = 0; i < this.children.length; i++)
-				if (this.children[i].option == 'src')
-					opt1 = this.children[i];
-				else if (this.children[i].option == 'dest')
-					opt2 = this.children[i];
+			    opt1 = this.getOption('src'),
+			    opt2 = this.getOption('dest');
 
 			opt1.default = 'wan';
 			opt2.default = 'lan';
@@ -236,7 +231,19 @@ return view.extend({
 		o.modalonly = false;
 		o.default = o.enabled;
 		o.editable = true;
+		o.tooltip = function(section_id) {
+			var weekdays = uci.get('firewall', section_id, 'weekdays');
+			var monthdays = uci.get('firewall', section_id, 'monthdays');
+			var start_time = uci.get('firewall', section_id, 'start_time');
+			var stop_time = uci.get('firewall', section_id, 'stop_time');
+			var start_date = uci.get('firewall', section_id, 'start_date');
+			var stop_date = uci.get('firewall', section_id, 'stop_date');
 
+			if (weekdays || monthdays || start_time || stop_time || start_date || stop_date )
+				return _('Time restritions are enabled for this rule');
+
+			return null;
+		};
 
 		o = s.taboption('advanced', form.ListValue, 'direction', _('Match device'));
 		o.modalonly = true;

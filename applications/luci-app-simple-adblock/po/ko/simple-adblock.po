@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-08 06:14+0000\n"
-"Last-Translator: Youngbin Han <sukso96100@gmail.com>\n"
+"PO-Revision-Date: 2021-01-17 20:54+0000\n"
+"Last-Translator: ANTEGRAL <antegral@antegral.net>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationssimple-adblock/ko/>\n"
 "Language: ko\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.5-dev\n"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:217
 msgid "%s Error: %s"
@@ -16,10 +16,6 @@ msgstr ""
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:215
 msgid "%s Error: %s %s"
-msgstr ""
-
-#: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:198
-msgid "%s is blocking %s domains (with %s)."
 msgstr ""
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:129
@@ -73,6 +69,10 @@ msgstr "차단된 도메인들"
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:350
 msgid "Blocked Hosts URLs"
+msgstr ""
+
+#: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:198
+msgid "Blocking %s domains (with %s)."
 msgstr ""
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:188
@@ -278,6 +278,10 @@ msgstr "다시 시작 중"
 msgid "Run service after set delay on boot."
 msgstr ""
 
+#: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:223
+msgid "Service Control"
+msgstr ""
+
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:172
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:182
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:195
@@ -455,4 +459,4 @@ msgstr ""
 
 #: applications/luci-app-simple-adblock/luasrc/model/cbi/simple-adblock.lua:257
 msgid "none"
-msgstr ""
+msgstr "없음"

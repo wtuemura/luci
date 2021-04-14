@@ -1,20 +1,26 @@
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2021-04-09 08:05+0000\n"
+"Last-Translator: Pavel Pernička <pernicka.pa@gmail.com>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/openwrt/"
+"luciapplicationsfrps/cs/>\n"
 "Language: cs\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 4.6-dev\n"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:14
 msgid "Additional configs"
-msgstr ""
+msgstr "Další konfigurace"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:42
 msgid "Additional settings"
-msgstr ""
+msgstr "Další nastavení"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:39
 msgid "Allow ports"
-msgstr ""
+msgstr "Povolit porty"
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:39
 msgid ""
@@ -140,7 +146,7 @@ msgstr ""
 
 #: applications/luci-app-frps/htdocs/luci-static/resources/view/frps.js:13
 msgid "Environment variable"
-msgstr ""
+msgstr "Proměnná prostředí"
 
 #: applications/luci-app-frps/root/usr/share/rpcd/acl.d/luci-app-frps.json:3
 msgid "Grant access to LuCI app frps"
