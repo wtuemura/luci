@@ -31,7 +31,7 @@ return baseclass.extend({
 		ev.currentTarget.blur();
 
 		var cfg = uci.add('dhcp', 'host');
-		uci.set('dhcp', cfg, 'name', lease.hostname || '-');
+		uci.set('dhcp', cfg, 'name', lease.hostname);
 		uci.set('dhcp', cfg, 'ip', lease.ipaddr);
 		uci.set('dhcp', cfg, 'mac', lease.macaddr.toUpperCase());
 
@@ -48,7 +48,7 @@ return baseclass.extend({
 		var cfg = uci.add('dhcp', 'host'),
 		    ip6arr = lease.ip6addrs[0] ? validation.parseIPv6(lease.ip6addrs[0]) : null;
 
-		uci.set('dhcp', cfg, 'name', lease.hostname || '-');
+		uci.set('dhcp', cfg, 'name', lease.hostname);
 		uci.set('dhcp', cfg, 'duid', lease.duid.toUpperCase());
 		uci.set('dhcp', cfg, 'mac', lease.macaddr);
 		if (ip6arr)
@@ -84,8 +84,8 @@ return baseclass.extend({
 		var table = E('table', { 'class': 'table lases' }, [
 			E('tr', { 'class': 'tr table-titles' }, [
 				E('th', { 'class': 'th' }, _('Hostname')),
-				E('th', { 'class': 'th' }, _('IPv4-Address')),
-				E('th', { 'class': 'th' }, _('MAC-Address')),
+				E('th', { 'class': 'th' }, _('IPv4 address')),
+				E('th', { 'class': 'th' }, _('MAC address')),
 				E('th', { 'class': 'th' }, _('Lease time remaining')),
 				E('th', { 'class': 'th cbi-section-actions' }, _('Static Lease'))
 			])
@@ -123,7 +123,7 @@ return baseclass.extend({
 		var table6 = E('table', { 'class': 'table leases6' }, [
 			E('tr', { 'class': 'tr table-titles' }, [
 				E('th', { 'class': 'th' }, _('Host')),
-				E('th', { 'class': 'th' }, _('IPv6-Address')),
+				E('th', { 'class': 'th' }, _('IPv6 address')),
 				E('th', { 'class': 'th' }, _('DUID')),
 				E('th', { 'class': 'th' }, _('Lease time remaining')),
 				E('th', { 'class': 'th cbi-section-actions' }, _('Static Lease'))
